@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  TestViewController.h
 //  YX_NestViewController
 //
 //  Created by yang on 16/8/1.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface TestViewController : UIViewController
 
 @end
-

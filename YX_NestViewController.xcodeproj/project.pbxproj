@@ -9,10 +9,12 @@
 /* Begin PBXBuildFile section */
 		2FF8CB551D4FA65F00B3A26A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8CB541D4FA65F00B3A26A /* main.m */; };
 		2FF8CB581D4FA65F00B3A26A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8CB571D4FA65F00B3A26A /* AppDelegate.m */; };
-		2FF8CB5B1D4FA65F00B3A26A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8CB5A1D4FA65F00B3A26A /* ViewController.m */; };
 		2FF8CB5E1D4FA65F00B3A26A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF8CB5C1D4FA65F00B3A26A /* Main.storyboard */; };
 		2FF8CB601D4FA65F00B3A26A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF8CB5F1D4FA65F00B3A26A /* Assets.xcassets */; };
 		2FF8CB631D4FA65F00B3A26A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FF8CB611D4FA65F00B3A26A /* LaunchScreen.storyboard */; };
+		2FF8CB6C1D4FA67600B3A26A /* NestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8CB6B1D4FA67600B3A26A /* NestViewController.m */; };
+		2FF8CB6F1D4FA87000B3A26A /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8CB6E1D4FA87000B3A26A /* TestViewController.m */; };
+		2FF8CB721D4FA88A00B3A26A /* MissViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF8CB711D4FA88A00B3A26A /* MissViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,12 +22,16 @@
 		2FF8CB541D4FA65F00B3A26A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		2FF8CB561D4FA65F00B3A26A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FF8CB571D4FA65F00B3A26A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		2FF8CB591D4FA65F00B3A26A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		2FF8CB5A1D4FA65F00B3A26A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		2FF8CB5D1D4FA65F00B3A26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2FF8CB5F1D4FA65F00B3A26A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2FF8CB621D4FA65F00B3A26A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FF8CB641D4FA65F00B3A26A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2FF8CB6A1D4FA67600B3A26A /* NestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NestViewController.h; sourceTree = "<group>"; };
+		2FF8CB6B1D4FA67600B3A26A /* NestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NestViewController.m; sourceTree = "<group>"; };
+		2FF8CB6D1D4FA87000B3A26A /* TestViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
+		2FF8CB6E1D4FA87000B3A26A /* TestViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
+		2FF8CB701D4FA88A00B3A26A /* MissViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MissViewController.h; sourceTree = "<group>"; };
+		2FF8CB711D4FA88A00B3A26A /* MissViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MissViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,8 +66,12 @@
 			children = (
 				2FF8CB561D4FA65F00B3A26A /* AppDelegate.h */,
 				2FF8CB571D4FA65F00B3A26A /* AppDelegate.m */,
-				2FF8CB591D4FA65F00B3A26A /* ViewController.h */,
-				2FF8CB5A1D4FA65F00B3A26A /* ViewController.m */,
+				2FF8CB6A1D4FA67600B3A26A /* NestViewController.h */,
+				2FF8CB6B1D4FA67600B3A26A /* NestViewController.m */,
+				2FF8CB6D1D4FA87000B3A26A /* TestViewController.h */,
+				2FF8CB6E1D4FA87000B3A26A /* TestViewController.m */,
+				2FF8CB701D4FA88A00B3A26A /* MissViewController.h */,
+				2FF8CB711D4FA88A00B3A26A /* MissViewController.m */,
 				2FF8CB5C1D4FA65F00B3A26A /* Main.storyboard */,
 				2FF8CB5F1D4FA65F00B3A26A /* Assets.xcassets */,
 				2FF8CB611D4FA65F00B3A26A /* LaunchScreen.storyboard */,
@@ -149,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2FF8CB5B1D4FA65F00B3A26A /* ViewController.m in Sources */,
+				2FF8CB6C1D4FA67600B3A26A /* NestViewController.m in Sources */,
 				2FF8CB581D4FA65F00B3A26A /* AppDelegate.m in Sources */,
+				2FF8CB6F1D4FA87000B3A26A /* TestViewController.m in Sources */,
+				2FF8CB721D4FA88A00B3A26A /* MissViewController.m in Sources */,
 				2FF8CB551D4FA65F00B3A26A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
