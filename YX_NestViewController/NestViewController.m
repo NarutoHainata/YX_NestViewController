@@ -10,11 +10,24 @@
 #import "TestViewController.h"
 #import "MissViewController.h"
 @interface NestViewController ()
-
+@property(nonatomic, strong) TestViewController *tvc;
+@property(nonatomic, strong) MissViewController *mvc;
 @end
 
 @implementation NestViewController
 
+-(TestViewController*)tvc{
+    if (_tvc == nil) {
+        _tvc = [[TestViewController alloc]init];
+    }
+    return _tvc;
+}
+-(MissViewController*)mvc{
+    if (_mvc == nil) {
+        _mvc = [[MissViewController alloc]init];
+    }
+    return _mvc;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
@@ -26,20 +39,23 @@
     segmentControl.selectedSegmentIndex = 0;
     [segmentControl addTarget:self action:@selector(change:) forControlEvents:UIControlEventValueChanged];
     
+    [self.view addSubview:self.tvc.view];
+    
+    
+    
     
 }
 -(void)change:(UISegmentedControl *)sender{
 
-    TestViewController *tvc = [[TestViewController alloc]init];
-    MissViewController *mvc = [[MissViewController alloc]init];
-    if ([sender selectedSegmentIndex] == 0) {
-        [self.view addSubview:tvc.view];
-        [mvc.view removeFromSuperview];
+    if ([sender selectedSegmentIndex] == 1) {
+        [self.view addSubview:self.mvc.view];
+        [self.tvc.view removeFromSuperview];
     }
-    else if ([sender selectedSegmentIndex] == 1){
-        [self.view addSubview:mvc.view];
-        [tvc.view removeFromSuperview];
+    else if ([sender selectedSegmentIndex] == 0){
+        [self.view addSubview:self.tvc.view];
+        [self.mvc.view removeFromSuperview];
     }
+    
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
